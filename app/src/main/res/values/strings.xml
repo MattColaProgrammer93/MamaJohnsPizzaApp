@@ -2,4 +2,33 @@
     <string name="app_name">MamaJohnsPizzaApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--The list of pizza sizes-->
+    <string-array name="pizzaSizesArray">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <!--The list of pizza sizes-->
+    <string-array name="crustTypesArray">
+        <item>Stuffed</item>
+        <item>Thin</item>
+        <item>Thick</item>
+        <item>Flatbread</item>
+        <item>Cracker</item>
+    </string-array>
+
+    <!--The list of pizza sizes-->
+    <string-array name="toppingsArray">
+        <item>Pepperoni</item>
+        <item>Sausage</item>
+        <item>Bacon</item>
+        <item>Mushrooms</item>
+        <item>Onions</item>
+        <item>Chicken</item>
+        <item>Peppers</item>
+    </string-array>
+
+
 </resources>
