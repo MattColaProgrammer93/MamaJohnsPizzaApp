@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".OrderFragment">
 
+
+
     <!--The Pizza Sizes-->
 
     <Spinner
@@ -102,7 +104,7 @@
 
     <!--Pizza Shape-->
     <RadioGroup
-        android:id="@+id/pizzaShapes"
+        android:id="@+id/pizzaShapesGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="145dp"
@@ -114,13 +116,13 @@
         app:layout_constraintTop_toBottomOf="@+id/pizzaShapesText">
 
         <RadioButton
-            android:id="@+id/radio_circle"
+            android:id="@+id/radio_circleShape"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Circle" />
 
         <RadioButton
-            android:id="@+id/radio_sqaure"
+            android:id="@+id/radio_sqaureShape"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Square" />
