@@ -6,15 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
 import com.example.mamajohnspizzaapp.databinding.FragmentOrderBinding
 
 
 class OrderFragment : Fragment() {
     private var _binding: FragmentOrderBinding? = null
     private val binding get() = _binding!!
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentOrderBinding.inflate(inflater, container, false)
         val view = binding.root
@@ -39,7 +45,9 @@ class OrderFragment : Fragment() {
                     else -> "Square"
                 })
                 pizzaOrderText += ", Pizza Size: $pizzaSizeSelected, Crust: $crustTypeSelected, Topping: $toppingsSelected"
-                Toast.makeText(activity, pizzaOrderText, Toast.LENGTH_LONG).show()
+                val action = OrderFragmentDirections
+                    .actionOrderFragmentToCheckoutFragment(pizzaOrderText)
+                view.findNavController().navigate(action)
             }
         }
 

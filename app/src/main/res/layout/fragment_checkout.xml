@@ -35,6 +35,7 @@
                 android:textSize="24sp" />
 
             <TextView
+                android:id="@+id/orderCheckout"
                 android:layout_width="381dp"
                 android:layout_height="216dp"
                 android:text="Nothing in here..."
